@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eternal Dynasty</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="library/fontawesome/css/all.css">
+    <link rel="stylesheet" href="library/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="library/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+        
+        .testimonial-link {
+            text-decoration: none;            /* Remove underline */
+            color: #343434;                   /* Set text color */
+            text-transform: uppercase;        /* Convert text to uppercase */
+            padding: 5px 10px;               /* Add padding */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+        }
+
+        .testimonial-link:hover,
+        .testimonial-link:focus {
+            text-decoration: none;            /* Ensure no underline on hover/focus */
+            color: #000;                      /* Optionally change color on hover/focus */
+            background-color: #f8f9fa;        /* Optionally change background color on hover/focus */
+        }
+
+    </style>
+</head>
+<body>
+    <?php
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        // Redirect to the desired page
+        header('Location: index.php'); // Change to the actual target page
+        exit();
+    }
+    ?>
+
+    <header>
+        <!-- Banner -->
+        <section class="banner">
+            <div id="banner">
+                <!--header-->
+                <div id="header">
+                    <ul class="nav">
+                        <li><a href="#home" class="select">Home</a></li>
+                        <li><a href="#aboutus">About Us</a></li>
+                        <li><a href="index.php">Service</a></li>
+                        <li><a href="#testimonial">History</a></li>
+                    </ul>
+                </div>
+                <!--end-->
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="img/banner/image3.jpeg" class="d-block w-100" alt="first slide">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="img/banner/main.jpg" class="d-block w-100" alt="second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/banner/main2.jpg" class="d-block w-100" alt="third slide">
+                        </div>
+                    </div>
+                    <div class="banner-caption">
+                        <div class="first-text">
+                            <img id="logo" src="img/bagan.png" alt="Logo">
+                            <h1>Eternal Dynasty</h1>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="second-text">နာမည်လှလှလေးတွေပေးကြမယ်</div>
+                        <!-- Form for redirection -->
+                        <form action="" method="post">
+                            <button type="submit" class="btn btn-primary">ဆက်ရန်</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- End Banner -->
+
+    <!-- Testimonial -->
+    <section id="testimonial" class="std-section">
+        <div class="container">
+            <h1 class="std-title">မြန်မာနိုင်ငံ၏ခေတ် ၄ ခေတ်</h1>
+            <div class="owl-carousel owl-theme">
+                <a href="bagan.php" class="testimonial-link">
+                    <div class="item">
+                        <div class="testimonial-item">
+                            <div class="testimonial-img">
+                                <img src="img/banner/anawrahta.jpeg" alt="testimonial_img"/>
+                            </div>
+                            <h3>ပထမ မြန်မာနိုင်ငံတော်ခေတ်</h3>
+                            <p>
+                                <q> 
+                                    ပထမမြန်မာနိုင်ငံတော်ကို အနော်ရထာမင်း နန်းတက်ခဲ့သည့် ခရစ်နှစ် ၁၀၄၄ က စပြီး ရေတွက်သောကြောင့် လွန်ခဲ့သောနှစ်ပေါင်း ၉၇၆ ( ခရစ်နှစ်၂၀၂၀ - ၁၀၄၄= ၉၇၆ ) မှ စတင်ခဲ့ကြောင်း သမိုင်းအထောက်အထားများအရ အတည်ပြု မှတ်သားနိုင်သည်။ ပုဂံမင်း ၅၅ ဆက်အနက် ၄၂ ဆက်မြောက် မင်းဖြစ်သည်။ အနော်ရထာကား ပုဂံပြည့်ရှင် ကွမ်းဆော်မင်းဟုလည်းတွင်သော ကြောင်ဖြူမင်းနှင့် မိဖုရားမြောက်ပြင်သည်တို့မှ သက္ကရာဇ် ၃၇၆ ခုနှစ်တွင် ဖွားမြင်သောသားတော်တစ်ဦး ဖြစ်သည်။
+                                </q>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            <a href="second.php" class="testimonial-link">
+                <div class="item">
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="img/banner/2.jpeg" alt="testimonial_img"/>
+                        </div>
+                        <h3>ဒုတိယ မြန်မာနိုင်ငံတော်ခေတ်</h3>
+                        <p>
+                            <q> 
+                                ဘုရင့်နောင်သည် (၁၅၁၆ - ၁၅၈၁)တပင်ရွှေထီး အစပျိုးခဲ့သည့် ဒုတိယ ပြည်ထောင်စုမြန်မာနိုင်ငံကြီး ကိုအောင်မြင်စွာ ဆက်လက်တည်ဆောက်နိုင်ခဲ့သည့် ဘုရင်တစ်ဦး ဖြစ်သည်။ ဦးကုလား၊ မှန်နန်းရာဇဝင် အစရှိသည့် ရာဇဝင်ကျမ်းများတွင် ဘုရင့်နောင်သည် မင်းဆွေမင်းမျိုးဖြစ်သည်ဟု ဆိုသော်လည်း မွန်၊ ရခိုင်နှင့် ယိုးဒယား တို့မှ ရာဇဝင်ကျမ်းများတွင်မူ သာမန်မျိုးရိုးမှ ဆင်းသက်သူဟုသာ ပြဆိုကြသည်။ မည်သို့ပင် ဖြစ်စေ ဘုရင့်နောင်သည် ၁၆ ရာစု အရှေ့တောင်အာရှသမိုင်းတွင် နာမည်အကျော်ကြားဆုံး ဘုရင်တစ်ဦးအဖြစ် လက်ခံထားကြသည်။
+                            </q>
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="third.php" class="testimonial-link">
+                <div class="item">
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="img/banner/3.jpeg" alt="testimonial_img"/>
+                        </div>
+                        <h3>တတိယ မြန်မာနိုင်ငံတော်ခေတ်</h3>
+                        <p>
+                            <q> 
+                                အလောင်းမင်းတရား (ဝါ) အလောင်းဘုရား (ခရစ်နှစ် ၂၄ ဩဂုတ် ၁၇၁၄ - ၁၁ မေ ၁၇၆၀) ၏ အမည်ရင်းမှာ ဦးအောင်ဇေယျ ဖြစ်သည်။ ထီးနန်းမစိုးစံခင်အချိန်က မုဆိုးဖိုရွာ၏ ရွာသူကြီးဖြစ်ပြီး ကုန်းဘောင်မင်းဆက် တတိယမြန်မာဧကရာဇ်နိုင်ငံတော် ကို စည်းရုံးထူထောင်သောမင်း ဖြစ်သည်။
+                                အလောင်းမင်းတရားသည် ရွှေဘိုမြို့မှအစပြုပြီး မြန်မာတနိုင်ငံလုံး သိမ်းပိုက်မင်းပြုခဲ့သည်။ ယခင်က ယိုးဒယားနိုင်ငံ၊ အယုဒ္ဓယကို သိမ်းယူရန်ချီတက်ခဲ့သော်လည်း မအောင်မြင်ဘဲ အပြန်ခရီးတွင် ကျောက်ရောဂါ (သို့) ဝမ်းရောဂါဖြင့် နတ်ရွာစံကွယ်လွန်ခဲ့သည်။
+                            </q>
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="fourth.php" class="testimonial-link">
+                <div class="item">
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="img/banner/4th.jpeg" alt="testimonial_img"/>
+                        </div>
+                        <h3>လွတ်လပ်ရေးခေတ်</h3>
+                        <p>
+                            <q> 
+                                လွတ်လပ်ရေးခေတ်သည် ၁၉၄၈ ဇန်နဝါရီ ၄ ရက်မှ စတင်ခဲ့သည်။ မြန်မာနိုင်ငံလွတ်လပ်ရေး ခေါင်းဆောင်မှာ ဗိုလ်ချုပ်အောင်ဆန်းဖြစ်သော်လည်း လွတ်လပ်ရေး မရခင်တွင်ပဲ လုပ်ကြံခံခဲ့ရသည်။ထို့ကြောင့် လွတ်လပ်ရေး ရပြီး ပထမဆုံးသော မြန်မာနိုင်ငံ၏ သမ္မတမှာ ဦးစပ်ရွှေသိုက်(၁၉၄၈- ၁၉၅၂) ဖြစ်လာသည်။
+                            </q>
+                        </p>
+                    </div>
+                </div>
+            </a>
+            </div>
+        </div>
+    </section>
+    <!-- End Testimonial -->
+
+    <!-- About Us -->
+    <section id="aboutus" class="std-section">
+        <div class="container">
+            <h1 class="st-title">Eternal Dynasty ၏ အမည်ပေးပုံ</h1>
+            <div class="about-us">
+                <div class="item">
+                    <div class="aboutus-item">
+                            <q> 
+                                <div class="container">
+                                    <h3>မြန်မာနိုင်ငံ၏ အမည်ပေးစနစ်</h3>
+                                    <p>မြန်မာနိုင်ငံ၏ အမည်ပေးစနစ်သည် အနိုင်တော်အိမ့် အမည်ပေးပုံစနစ်နှင့် ကွာခြားသည်။ မိခင်သွေးမဟုတ်ဖခင်၏အမည်ကိုယူ၍မှည့်ပေးလျှင် မြန်မာတိုင်းမိသားစုနာမည် မဟုတ်သည်ဟု အမြင်ရှိသည်။ အစိုးရ၏ထောက်ခံမရှိဘဲ မြန်မာတိုင်းသည် မိမိတိုင်း၏အမည်များကို အလိအမု ပျောက်ပြန်လျက်ရှိသည်များလည်း ရှိသည်။ ယေဘုယျအားဖြင့် မြန်မာတိုင်းသည် "ဦး"၊ "ဒေ" စသောဂုဏ်တင်သည့်အမည်များကို အသုံးပြုသည်။</p>
+
+                                    <h3>ယခင်က အမည်ပေးပုံ</h3>
+                                    <p>မြန်မာအမည်များသည် ရှေးယခင်က စာလံးုတစ်လုံးတည်းသာဖြစ်သည် (သာဓက–ဦး၊ ဦးပု)။ ၁၈၉၀ ဝနက်ကျင်တင်အင်္ဂလိပ်ပညာရှင်များသည် မြန်မာလူမျိုး၏ စာလံးုတစ်လုံးတည်းသာမှည့်ပေးနေခဲ့ကစ၍ ရခိုင်တိုင်းတွင်မူ စာလံးုသုံးလုံးအထိမှည့်ပေးနေပါသည်။</p>
+
+                                    <h3>၂၀ရာစုအမည်ပေးပုံ</h3>
+                                    <p>၂၀ရာစုအောက်ပိုင်းမှသာ စာလံးုသုံးလုံးအထိ စတင်အမည်မှည့်ပေးခဲ့ပြီး ယခုအခါ အမည်များသည် စာလံးုသုံးလုံး၊ လေးလုံးအထိရှိလာသည်။ သမိုင်းပညာရှင်များသည်လည်း ကုန်းဘောင်အင်ပါယာပျက်သွားပြီးချနိတ် ငွ်မြန်မာတိုင်းသည် ပါဠိစကားလုံးများသာမက "မင်း"ဟုသာအေးကိုလည်း နာမည်အဖြစ် ထည့်သွင်းခဲ့ကြောင်း မှတ်ယူခဲ့သည်။</p>
+
+                                    <h3>ဗိုလ်ချုပ်အမည်များ</h3>
+                                    <p>ဗိုလ်ချုပ်အောင်ဆန်း၏ မိဘအမည်များမှာ ဦးဖာရှင်၊ ဒေါ်စုတိုင်းဖြစ်ကသည်။ အမည်ရင်းမှာ ထိနလ်င်းဖြစ်သော သို့သော် အစ်ကိုဖြစ်သူ အောင်ဆန်းကိုလိပ်၍ "အောင်ဆန်း" ဟု အမည်တပ်ခဲ့သည်။ သူ၏သမီးအမည်မှာ အောင်ဆန်းစုကည်ဖြစ်သည်။ ဖခင်ဖြစ်သူ ဗိုလ်ချုပ်အောင်ဆန်း၏ အမည်မှ "အောင်ဆန်း"၊ ဖခင်ဘက်မှ အဖွားဖြစ်သူ ဒေါ်စုအမည်မှ "စု" နှင့် မိခင်ဖြစ်သူ ဒေါ်ခင်ကည်အမည်မှ "ကည်" တို့ကို ပေါင်းစပ်ထားခြင်းဖြစ်သည်။ သူ၏သားအမည်မှာ အောင်ဆန်းဦးဖြစ်သည်။ သူ၏သားသမီးများကို "အောင်ဆန်း" ဖြင့် အမည်မှည့်ပေးခဲ့သောကြောင့် "အောင်ဆန်း" အမည်သည် မိသားစုအမည်ဖြစ်သည် ဟု မှတ်ယူကြသည်။</p>
+
+                                    <h3>ဝန်ကြီးချုပ်များ</h3>
+                                    <p>ထိုအပြင် ဝန်ကြီးချုပ်ဦးသုည်လည်း မိမိ၏ သမီးများကို "စနည်းစနည်း"၊ "သနည်းသနည်း"၊ "ခင်အေး" ဟုအမည် ဖြင့်မှည့်ပေးထားသည်။ ယခုအခါ ထိုကဲ့သို့သော အမည်များ အနည်းအငယ်ရှိလာသည်။ သို့သော် ယေဘုယျအားဖြင့် အများစုက မိမိ၏သက်သတ်သလောက် အမည်မှည့်ပေးလျက်ရှိသည်။</p>
+
+                                    <h3>အမည်ပေးပုံ အနည်းအများ</h3>
+                                    <p>အချို့သော အမည်ပေးပုံကို ယုံကြည်သောသူများသည် ဘေဒင်ဆရာအား မိမိကလေးငယ်၏ မွေးရက်ကို လိပ်၍ အမည်မှည့်ပေးစေသည်။ သာဓကအားဖြင့် တနလာ့နွေထွန်းသို့ မွေးဖွားသောသူကို "က" ဖြင့်စ၍ အမည်ပေးကြသည်။ ထိုသို့သော အမည်ပေးပုံမှာ အောက်ပါအတိုင်းဖြစ်သည်။</p>
+                                    <table border="3px">
+                                        <tr border= "2px">
+                                            <th>နေ့ရက် </th>
+                                            <th>အက္ခရာ </th>
+                                        </tr>
+                                        <tr>
+                                            <td>တနလ်ာ</td>
+                                            <td>က ၊ခ ၊ ဂ ၊ ဃ၊ င</td>
+                                        </tr>
+                                        <tr>
+                                            <td>အင်္ဂါ</td>
+                                            <td>စ၊ ဆ၊ ဇ၊ စျ၊ ည</td>
+                                        </tr>
+                        
+                                        <tr>
+                                            <td>ဗုဒ္ဓဟူး</td>
+                                            <td>လ၊ ဝ၊ ယ၊ ရ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ကြာသပတေး</td>
+                                            <td>ပ၊ ဖ၊ ဘ၊ဗ၊ မ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>သောကြာ</td>
+                                            <td>သ၊ ဟ </td>
+                                        </tr>
+                                        <tr>
+                                            <td>စနေ</td>
+                                            <td>တ၊ ထ၊ ဒ၊ ဓ၊ န</td>
+                                        </tr>
+                                        <tr>
+                                            <td>တနင်္ဂနွေ</td>
+                                            <td>အ၊ဏ၊ ဥ</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </q>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Us -->
+
+    <!-- Optional JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="library/owl-carousel/owl.carousel.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

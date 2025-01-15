@@ -1,0 +1,115 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Hide scrollbars */
+}
+
+#eternal-dynasty-background {
+    position: fixed; /* Fixed to cover the viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('img/banner/bg.jpeg') no-repeat center center;
+    background-size: cover; /* Cover the entire area */
+    z-index: -1; /* Ensure it's behind other content */
+}
+
+
+#eternal-dynasty-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.eternal-dynasty-form-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    z-index: 3;
+    padding: 20px;
+}
+
+#eternal-dynasty-form {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: rgba(212, 202, 178, 0.9);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 4;
+}
+
+#eternal-dynasty-form label {
+    margin-bottom: 10px;
+}
+
+.eternal-dynasty-gender-options {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.eternal-dynasty-gender-options input {
+    margin-right: 5px;
+}
+
+.eternal-dynasty-gender-options label {
+    margin-right: 15px;
+}
+
+.eternal-dynasty-custom-alert {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: #ddd78e;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-align: center;
+}
+
+.eternal-dynasty-custom-alert button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background: #721c24;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.eternal-dynasty-custom-alert button:hover {
+    background: #e2858e;
+}
+
+#eternal-dynasty-result {
+    width: 100%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-align: center;
+    max-width: 400px;
+    margin: 20px auto;
+}
